@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Random Number</title>
+
+<style>
+	#click{position:absolute; top:0px; left:0px
+	}
+</style>
+	<script>
+		function change()
+			{
+				var rand1 = Math.floor(Math.random()*500);
+				var rand2 = Math.floor(Math.random()*500);
+				document.getElementById("click").style.top = rand1+"px";
+				document.getElementById("click").style.left = rand2+"px";
+				var message = new Array ("Click Me","Move Me","Click Here","Button","Next");
+				document.getElementById("click").innerHTML=message[Math.floor(Math.random()*5)];
+				
+			}
+	
+	</script>
+  </head>
+
+  <body>
+	<button id="click" onclick="change()">Click Me</button>
+  </body>
+</html>
