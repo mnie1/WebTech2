@@ -6,7 +6,7 @@
     <title>Document</title>
 <style>
     body{background-color:skyblue;}
-    h1{text-align:center; font-family:IMPACT;font-size:36pt;color:red}
+    h1{text-align:center; font-family:IMPACT;font-size:36pt;}
     h2{font-family:'Times New Roman', Times, serif; font-size:24pt;color:rgb(0, 151, 13)}
     p{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:12pt; text-indent:20px;}
     hr{width:60%; color:lightslategrey; height: 6px; background-color:lightslategrey}
@@ -21,17 +21,17 @@
         {
             document.getElementById("heading").style.color=delta[counter];
             counter = counter+1
-            if (counter == changecolors.length);
+            if (counter == delta.length)
             {
                 counter=0
             }
-            setTimeout("changecolor()",100);
+            setTimeout("changecolor()",2000);
         }
 
 </script>
 </head>
-<body>
-    <h1 id="heading" onload="changecolor()">My Interests</h1>
+<body onload="changecolor()">
+    <h1 id="heading" style="color: red">My Interests</h1>
     <a href="index.htm">Go to "A Little Introduction"</a>
     <a href="https://en.wikipedia.org/wiki/City_pop" target="_blank"><img src="https://i.pinimg.com/originals/53/6b/24/536b24cfbe81c157fcbafbe10839691f.jpg" alt="picture of Tokyo City View and its representation in City Pop" width="500"/></a>
     <p class="bordered">The following are my main interests, which are <a href="#anchor1">City Pop</a>, <a href="#anchor2">Riding my Bike</a>, and <a href="#anchor3">Watching and Analyzing Movies</a>.</p>
