@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Page title goes here</title>
+
+	<style>
+	/* Your styles go here */
+	.h1{font-size:40pt; font-weight:bold; text-align:center}
+	</style>
+	<script src="http://code.jquery.com/jquery.min.js">
+	$(function(){
+	   // jQuery methods go here...
+	   //1
+	   $("#hide").click(function(){
+		   $("tr:odd").fadeOut(3000);
+	   })
+	   
+	   //2
+	   $("tr").click(function(){
+		   $(this).fadeOut(3000);
+	   })
+	});
+	   //3
+	$(function(){   
+	   $("#show").click(function(){
+		   $("tr").fadeIn(2000);
+		   $("tr:odd").css("background-color","yellow")
+	   })
+	});
+	/* Your additional JavaScript goes here */
+	</script>
+  </head>
+  <body>
+	<!-- Your HTML goes here -->
+<h1>Something Goes Here</h1>
+<table>
+<tr><td>Lions</td></tr>
+<tr><td>Tigers</td></tr>
+<tr><td>Bears</td></tr>
+<tr><td>Exams</td></tr>
+</table>
+<button id="show">Show All</button>
+<button id="hide">Hide Odd</button>
+  </body>
+</html>
