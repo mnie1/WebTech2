@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The MUN Catalog</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+    .header{text-align:center;color:white;font-size:70px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
+    body{background-color:lightblue}
+    tr{font-size:17px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+    .justify{text-align: justify; vertical-align: top}
+    .toc{list-style-type: none;margin: 0;padding: 0}
+</style>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#greet").click(function(){
+            alert("Greetings and Welcome!"+ $("#welcome").text());
+        });
+    });
+    $(document).ready(function(){
+         $("#bye").click(function(){
+             $("#logo").delay("slow").fadeOut();
+         });
+     });
+</script>
+
+</head>
+
+<body>
+    <ul class=toc>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="AboutMe.htm">About Me</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="HistoryofMUN.htm">History of MUN</a></li>
+        <li><a href="MUNinChina.htm">MUN in China</a></li>
+        <li><a href="MUNProcedures.htm">MUN Procedures</a></li>
+        <li><a href="Firsttimer.htm">First Time MUNer</a></li>
+        <li><a href="Alumni.htm">Alumni of MUN</a></li>
+        <li><a href="Resources.htm">MUN Resources</a></li>
+        <li><a href="Contributions.htm">Contributions to Society</a></li>
+        <li><a href="OnlineMUN.htm">Online MUN</a></li>
+        <li><a href="Contact.htm">Contact Me</a></li>
+      </ul>
+<table>
+
+<tr><td colspan="3" class="header">THE MUN CATALOG</td></tr>
+
+<tr><td colspan="2" id="welcome">Welcome to the MUN Catalog! This website is here to help you to develop an understanding of 
+    what Model United Nations is all about, a little information on the specifics of the activity,
+    and a directory where you can find MUN conferences in China! This is a website dedicated to helping students who are interested in Model United Nations
+ and helping them create a one-stop station where they can discover other conferences to attend to, learn more about the specifics on MUN, and other topics that are related to MUN in general!</td><td class="justify" rowspan="3">
+<img src="mun.jpg" alt="munlogo" id="logo"></td></tr>
+
+
+<tr><td colspan="2" class="justify"><h2>Objective and Mission</h2><br /><p>The objective of this site is to provide a catalog of MUN conferences in China and to provide a platform 
+    to read and learn about Model UN concepts, rules and procedure, etc. For the past few years, there has been a dramatic increase in the number of MUN conferences around the world, and China especially. However, 
+    there doesn't seem to be one single platform where you can discover different conferences that are located in China. In an effort to tackle this issue, this website has divided China into three regions and have collected
+    a series of MUN conferences that are located in those regions to better help students in China find suitable conferences to participate in. In the past, I was unsure as to how I can attend more conferences than the ones that were 
+    offered by my high school. I was trapped inside my own ignorance that there were actually so many other MUN conferences around me that I didn't know about. I hope, to whomever has those same feelings as I've had in my past, be able to 
+    find the right conference and enjoy themselves in the fun and jubliation that comes with debating at the MUN stage.
+</p></td></tr>
+
+<button id="greet">Greetings</button>
+<button id="bye">Bye!</button>
+
+
+
+</body>
