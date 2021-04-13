@@ -9,6 +9,20 @@
 <style>
    h1{text-align:center}
 </style>
+<script>
+    var delta = new Array("red","orange","yellow","green","blue","indigo","violet");
+    var counter = 0
+   function header()
+   {
+        document.getElementById("color").style.color=delta[counter];
+        counter = counter+1
+        if (counter == delta.length)
+        {
+            counter=0
+        }
+            setTimeout("header()",2000);
+        }
+</script>
 </head>
 <ul class=toc>
     <li><a href="index">Home</a></li>
@@ -23,10 +37,11 @@
     <li><a href="Contributions.htm">Contributions to Society</a></li>
     <li><a href="OnlineMUN.htm">Online MUN</a></li>
     <li><a href="Contact.htm">Contact Me</a></li>
+    <li><a href="Citations.htm"></a></li>
   </ul>
-<body>
+<body onload="header()">
     <h1>How can Model UN Contribute to Society?</h1>
-<p>When asked whether MUN is a volunteer/community service project, usually people would agree that this kind of activity is valid as a community service project. Some would even argue 
+<p id="color">When asked whether MUN is a volunteer/community service project, usually people would agree that this kind of activity is valid as a community service project. Some would even argue 
     that Model UN as an activity is more important than the United Nations itself because the UN is criticized as bureaucratic nonsense because it essentially has no power to do anything. Hence, 
     the resolutions that are passed in the actual United Nations are technically useless. As Model UN helps educate and provide a forum of debate for students, they are very helpful to people at a 
     fundamental level. </p>

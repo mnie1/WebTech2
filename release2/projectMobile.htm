@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="apple-touch-icon" sizes="60x60" href="cat.PNG"/>
+	<link rel="icon" sizes="128x128" href="cat.PNG" />
     <title>The MUN Catalog</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -14,12 +19,6 @@
     .toc{list-style-type: none;margin: 0;padding: 0}
 </style>
 <script src="https://code.jquery.com/jquery.min.js"></script>
-<script>
-    var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
-	if (mobile) {  
-        	document.location="projectMobile.htm"
-	}
-</script>
 <script>
     $(document).ready(function(){
         $("#greet").click(function(){
@@ -36,19 +35,6 @@
 </head>
 
 <body>
-    <!--Following are Javascript-->
-    <!--MUNinNorthernChina.htm includes a onclick h1 which changes it style of the below links' font and the color changes-->
-    <!--HistoryofMUN.htm includes a onlick on id="mln" (first h2) which should changes its h2 title to its abbreviations-->
-    <!--Contact.htm includes a form validation javascript function that makes sure the submitter answers the question "why are you submitting this form?"-->
-    <!--AboutMe.htm includes a slideshow of the image, which slides around three images throughout a given time-->
-    <!--Contributions.htm includes a animation, which, onload, changes the color of the first paragraph-->
-    <!--AboutMe.htm includes a onload, changes the innerhtml of the button every time it loads into different words-->
-    <!--Following are Jquery-->
-    <!--Index.htm includes a function that shows the td text with an additional greet text when greetings button is clicked-->
-    <!--Index.htm includes a function where when you press the "bye!" button, the image slowly disappears (fadeout)-->
-    <!--AboutMe.htm includes a function where once you push the button, it appends on h1-->
-    <!--Firsttimer.htm includes a function where, once you click on h1 (title), a slidetoggle function is run where the first paragraph is folded and disappears, pressing it again will make it come back-->
-    
     <ul class=toc>
         <li><a href="index.htm">Home</a></li>
         <li><a href="AboutMe.htm">About Me</a></li>

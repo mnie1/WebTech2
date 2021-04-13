@@ -9,6 +9,14 @@
 <style>
    h1{text-align:center}
 </style>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+     $(document).ready(function(){
+        $("#toggle").click(function(){
+            $("#1").slideToggle("slow")
+        });
+    });
+</script>
 </head>
 <body>
     <ul class=toc>
@@ -24,9 +32,10 @@
         <li><a href="Contributions.htm">Contributions to Society</a></li>
         <li><a href="OnlineMUN.htm">Online MUN</a></li>
         <li><a href="Contact.htm">Contact Me</a></li>
+        <li><a href="Citations.htm"></a></li>
       </ul>
-    <h1>First Time Participating in MUN?</h1>
-<p>Participating in MUN is a challenging task, especially if you are just starting. For me personally, I barley spoke during the first time I participated in MUN. In this page, I'll give some easy tips to 
+    <h1 id="toggle">First Time Participating in MUN?</h1>
+<p id="1">Participating in MUN is a challenging task, especially if you are just starting. For me personally, I barley spoke during the first time I participated in MUN. In this page, I'll give some easy tips to 
     help you solidify your stance and prepare you if this is your first time participating!
 </p>
 
