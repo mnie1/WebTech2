@@ -23,8 +23,30 @@
                 });
             });
         </script>
+        <script>
+            function sb()
+            {
+            var rand1 = new Array("Submit","Send","Complete","Finish","Done","OK","Execute");
+            var rand2 = document.getElementById("append");
+            rand2.innerHTML = rand1[Math.floor(Math.random()*7)];
+            }
+   
+                     
+        var slideshow = new Array("Marco1.jpeg","Marco2.jpg","Marco3.jpg");
+        var counter=0
+        function slide()
+        {
+            document.getElementById("img").src=slideshow[counter]
+            counter=counter+1
+            if (counter == slideshow.length)
+            {
+                counter=0
+            }
+            setTimeOut("slide()",10000)
+        }
+        </script>
     </head>
-    <body>
+    <body onload="sb()">
         <ul class=toc>
             <li><a href="index">Home</a></li>
             <li><a href="AboutMe.htm">About Me</a></li>
@@ -67,7 +89,7 @@
 <p>Honorable Chairs and Esteemed Delegates! My name is Marco Nie and I am a sophomore at Babson College! I am an Japanese born Chinese, and I live in the bright city of Shenzhen! 
     I have been invovled in Model United Nations since early middle school, and I have been very passionate
     about the subject ever since. <br />
-    <img src="Marco1.jpeg" alt="marco" class="marco" width=10%>
+    <img src="Marco1.jpeg" alt="marco" class="marco" width=10% onload="slide()" id="img">
     Yet, the passion didn't come that smoothly, I started MUN as a blank slate, not knowing where to start my research,
     how to debate, or even the procedures during the first conference that I attended in 2014 at Shenzhen. The conference was called 
     ACAMUN and I was in a General Assmelby 2 (GA2) committee as the deleegation of Libya.  I vividly recall our contention

@@ -9,26 +9,36 @@
 <style>
    h1{text-align:center}
 </style>
+<script>
+    function processform()
+    {
+        if (document.getElementById("1").checked == false && document.getElementById("2").checked == false && document.getElementById("3").checked == false && document.getElementById("4").checked == false);
+        {
+            alert("You must submit the reason why you are submitting this form");
+        }
+    }
+</script>
 </head>
-<ul class=toc>
-    <li><a href="index">Home</a></li>
-    <li><a href="AboutMe.htm">About Me</a></li>
-    <li><a href="contact.asp">Contact</a></li>
-    <li><a href="HistoryofMUN.htm">History of MUN</a></li>
-    <li><a href="MUNinChina.htm">MUN in China</a></li>
-    <li><a href="MUNProcedures.htm">MUN Procedures</a></li>
-    <li><a href="Firsttimer.htm">First Time MUNer</a></li>
-    <li><a href="Alumni.htm">Alumni of MUN</a></li>
-    <li><a href="Resources.htm">MUN Resources</a></li>
-    <li><a href="Contributions.htm">Contributions to Society</a></li>
-    <li><a href="OnlineMUN.htm">Online MUN</a></li>
-    <li><a href="Contact.htm">Contact Me</a></li>
-  </ul>
+
 <body>
+<ul class=toc>
+        <li><a href="index">Home</a></li>
+        <li><a href="AboutMe.htm">About Me</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="HistoryofMUN.htm">History of MUN</a></li>
+        <li><a href="MUNinChina.htm">MUN in China</a></li>
+        <li><a href="MUNProcedures.htm">MUN Procedures</a></li>
+        <li><a href="Firsttimer.htm">First Time MUNer</a></li>
+        <li><a href="Alumni.htm">Alumni of MUN</a></li>
+        <li><a href="Resources.htm">MUN Resources</a></li>
+        <li><a href="Contributions.htm">Contributions to Society</a></li>
+        <li><a href="OnlineMUN.htm">Online MUN</a></li>
+        <li><a href="Contact.htm">Contact Me</a></li>
+      </ul>
     <h1>Contact Me!</h1>
 
 <p>Submit a form to and ask any questions you may have!</p>
-<form action="http://wtspring13sec2.babson.edu/gordon/mailer.php" method="post">
+<form action="http://wtspring13sec2.babson.edu/gordon/mailer.php" method="post" onsubmit="return processform()">
 
 <p>First Name:
     <input type="text" name="firstname" maxlength="100">
@@ -37,10 +47,10 @@
 </p>
 <p>What are you submitting?
 <select name="submittype">
-    <option value="MUN">MUN Question</option>
-    <option value="general">General Question</option>
-    <option value="comment">Comment</option>
-    <option value="complaint">Complaint</option>
+    <option value="MUN" id="1">MUN Question</option>
+    <option value="general" id="2">General Question</option>
+    <option value="comment" id="3">Comment</option>
+    <option value="complaint" id="4">Complaint</option>
 </select></p>
 
 <p>Have you participated in MUN before?
@@ -51,7 +61,7 @@ No<input type="radio" name="MUN" value="No" />
 <p>Please type within the box area:</p>
 <p><textarea name=comments rows="5" cols="60"></textarea></p>
 
-<p><input type="submit" name="Submit" value="Submit">&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="Reset"></p>
+<p><input type="submit" name="Submit" value="Submit" id="click">&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="Reset"></p>
 
 
 </body>
